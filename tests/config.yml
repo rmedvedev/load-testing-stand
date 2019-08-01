@@ -1,0 +1,23 @@
+phantom:
+  address: example.com
+  ammofile: ammo.txt
+  ammo_type: uri
+  load_profile:
+    load_type: rps
+    schedule: step(5, 100, 5, 30)
+  headers:
+    - "[Host: example.com]"
+
+# Uncomment this if you want to autostop load testing
+# autostop:    
+  # autostop: 
+    # - http(5xx,25%,1s)  
+
+console:
+  enabled: true
+
+influx:
+  enabled: true
+  address: influx
+  database: metrics
+  tank_tag: 'mytank'
