@@ -2,6 +2,12 @@
 
 Stand for load testing with yandex tank and grafana dashboard
 
+## Graph samples
+
+Here is some sample graph.
+
+![image](doc/assets/dashboard.png)
+
 ## Installing / Getting started
 
 ```bash

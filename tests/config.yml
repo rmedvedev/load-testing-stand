@@ -6,7 +6,7 @@ phantom:
     load_type: rps
     schedule: step(5, 100, 5, 30)
   headers:
-    - "[Host: example.com]"
+    - "[Host: www.example.com]"
 
 # Uncomment this if you want to autostop load testing
 # autostop:    
@@ -15,6 +15,9 @@ phantom:
 
 console:
   enabled: true
+
+telegraf:
+  enabled: false
 
 influx:
   enabled: true
